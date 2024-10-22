@@ -65,7 +65,7 @@ String sensorData::readTime(HTTPClient& https, WiFiClientSecure& client) {
   Serial.println(timeSite);
   if (https.begin(client, timeSite)) {
     Serial.println("Connected to time site API");
-    delay(2000);
+    delay(200);
     int httpCode = https.GET();
     if (httpCode > 0) {
       Serial.println("GET worked");
@@ -78,13 +78,13 @@ String sensorData::readTime(HTTPClient& https, WiFiClientSecure& client) {
       myTime.replace("T", "%20");
     }
     else {
-      Serial.println("fuck: " + String(httpCode));
+      Serial.println("Failure: " + String(httpCode));
     }
     https.end();
     Serial.println("Time fetched: " + myTime);
   }
   else {
-    Serial.println("\nFuck you and fuck this\n");
+    Serial.println("\nDidn't Work\n");
   }   
   return myTime;   
 }
