@@ -11,8 +11,8 @@
 #include "dhtnew.h"
 #include "sensorData.h"
 
-const char* ssid = "TheShire";
-const char* password = "Potaytoe";
+const char* ssid = "";
+const char* password = "";
 
 DHTNEW dht(10);
 WiFiClientSecure client;
