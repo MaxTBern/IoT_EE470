@@ -2,7 +2,7 @@
 // Database connection details
 $host = "193.203.166.209"; // Replace with your database host
 $username = "u376527350_db_MaxBernstei"; // Replace with your database username
-$password = "&uC;e=J6"; // Replace with your database password
+$password = "*******"; // Replace with your database password
 $database = "u376527350_MaxBernstein"; // Replace with your database name
 
 // Create a connection
